@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="pra1">this is a p1 tag</p>
+    <p id="pra2">this is a p2 tag</p>
+    <p id="pra3">this is a p3 tag</p>
+
+    <button id="btn">Click</button>
+    <br><br>
+    <div id="colored-div" style="background-color: aqua; height: 50px; width: 300px;"> click me</div>
+    <div id="panel" style="background-color: darkcyan;height: 100px; width: 300px; display: none;"> this is expanded para</div> <br>
+
+    <div id="p1" style="background-color: darkcyan;height: 100px; width: 90px; "></div><br>
+
+    <div id="p2" style="background-color: rgb(199, 224, 36);height: 100px; width: 90px; "></div><br>
+
+    <div id="p3" style="background-color: rgb(219, 83, 15);height: 100px; width: 90px; "></div><br>
+
+
+    <script>
+        // $("#btn").click(function(){
+        //     $("#pra").hide();
+        // })
+
+        // $("#btn").click(function(){
+        //     $("#colored-div").animate({
+        //         'margin-top' : "+=30px"
+        //     });
+        // });  
+
+        // $(document).ready(function(){
+        //     $("#colored-div").click(function(){
+        //         $("#panel").slideDown();
+        //     });
+        // });
+        
+        // $(document).ready(function(){
+        //     $("#colored-div").click(function(){
+        //         $("#panel").slideUp();
+        //     });
+        
+
+        // $(document).ready(function(){
+        //     $("#colored-div").click(function(){
+        //         $("#panel").slideToggle();
+        //     });
+        // });
+
+        // this will select element its own will implimate to hide
+        // $("#btn").click(function(){
+        //     $(this).hide();
+        // });
+
+        //dblclick on double click it will implimate
+        // $("#btn").dblclick(function(){
+        //     $(this).hide();
+        // });
+
+
+        // $("#p1").mouseenter(function(){
+        //     $("#pra1").hide();
+        // });
+
+        // $("#p2").mouseleave(function(){
+        //     $("#pra2").hide();
+        // });
+
+        // $("#p3").hover(function(){
+        //     $("#pra3").hide();
+        // },
+        // function(){
+        //     $("#pra3").show();
+        // });
+
+        // $("#p1").mouseenter(function(){
+        //     $(this).hide();
+        // });
+
+        // $("#p2").mouseleave(function(){
+        //     $(this).hide();
+        // });
+
+        $("#p3").hover(function(){
+            $(this).animate({
+                'margin-left' : "+=50px"
+            })
+        },
+        function(){
+            $(this).animate({
+                'margin-left' : "-=50px"
+            })
+        });
+
+    </script>
+
+
+</body>
+</html>
