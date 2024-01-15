@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- grandparent -->
+    <ul> 
+        <!-- parent -->
+        <li> 
+            <!-- child -->
+            <span id="span1">item 1</span>
+        </li>
+        <!-- parent  -->
+        <li>
+            <!-- child--> 
+            <span id="span2">item 2</span>
+        </li>
+    </ul>
+     
+    <script>
+        var element = $("#span1").parents();
+        element.css("border" , " 2px solid red");
+    </script>
+</body>
+</html>
