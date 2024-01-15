@@ -10,7 +10,7 @@
     <!-- grandparent -->
     <ul> 
         <!-- parent -->
-        <li> 
+        <li>  
             <!-- child -->
             <span id="span1">item 1</span>
         </li>
@@ -22,7 +22,7 @@
     </ul>
      
     <script>
-        var element = $("#span1").parents();
+        var element = $("#span1").parentsUntil("ul");
         element.css("border" , " 2px solid red");
     </script>
 </body>
