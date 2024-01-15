@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .box{
+            width: 100.4px;
+            height: 100px;
+            border: 5px solid black;
+            padding: 10px;
+            margin: 20px;
+        }
+        .red-color{
+            background-color: tomato;
+        }
+        .circle{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red-color" id="box"></div>
+    <button id="btn5">click</button>
+
+    <script>
+        //to add class
+        //  $("#btn5").click(function(){
+        //     $("#box").addClass("circle black");
+        // })
+        //to remove class
+        //  $("#btn5").click(function(){
+        //     $("#box").toggleClass("red-color");
+        // })
+
+        //to get css value
+        //  $("#btn5").click(function(){
+        //    var css= $("#box").css("background-color");
+        //    alert(css);
+        // });
+        //to set css property
+        //  $("#btn5").click(function(){
+        // $("#box").css("background-color", "yellow");
+        // });
+        //to set multiple value
+        //  $("#btn5").click(function(){
+        // $("#box").css({
+        //     "background-color": "yellow",
+        //     "margin-left": "+=30"
+        // });
+        // });
+        //  $("#btn5").click(function(){
+        // var data= $("#box").width();
+        // alert(data);
+        // });
+        //  $("#btn5").click(function(){
+        // var data= $("#box").innerWidth();
+        // alert(data);
+        // });
+         $("#btn5").click(function(){
+        var data = $("#box").innerWidth();
+        alert(data);
+        });
+        //  $("#btn5").click(function(){
+        // var data= $("#box").width();
+        // alert(data);
+        // });
+    </script>
+    
+</body>
+</html>
