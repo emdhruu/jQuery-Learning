@@ -6,8 +6,103 @@
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+   
 </head>
 <body>
+    <p class="pra">this is a p tag</p>
+
+    <button id="btn1">Button 1</button>
+    <button id="btn2">Button 2</button><br><br>
+    <button id="btn3">Button 3</button><br><br>
+    <button id="btn4">Button 4</button><br><br>
+
+    <div id="colored-div" style="background-color: rgb(225, 255, 0); height: 100px; width: 100px;">
+        <p>this is p tag <a href="#" id="link" class="red" > click
+        </a></p>
+    </div>
     
+    <input type="text" name="text" id="text">
+
+    <!-- before -->
+    <ul id="list">
+        <!-- prepend -->
+        <li>red</li>
+        <li>black</li>
+        <li>yellow</li>
+        <!-- append -->
+    </ul>
+    <!-- after -->
+
+   
+    <script>
+        //to get text and tag
+        $("#btn1").click(function(){
+            var text = $("#colored-div").text();
+            alert(text);
+        });
+        $("#btn2").click(function(){
+            var text = $("#colored-div").html();
+            alert(text);
+        });
+
+        //to replace tag to set tag
+        $("#btn1").click(function(){
+            $("#colored-div").html("<h2> heading </h2>");
+        });
+        //to set nomal text
+        $("#btn1").click(function(){
+            $("#colored-div").html("heading");
+        });
+
+        //to get value from input box and alert same value
+        $("#btn1").click(function(){
+            var value = $("#text").val();
+            alert(value);
+        });
+
+        //to set value in input box
+        $("#btn1").click(function(){
+            $("#text").val("dhruti");
+        });
+
+        //to get attribute value
+        $("#btn1").click(function(){
+            var value = $("#link").attr("href");
+            alert(value);
+        });
+        //to set attribute value
+        $("#btn1").click(function(){
+           $("#link").attr("href", "#home");
+        });
+
+        // to set multiple attribute
+        $("#btn1").click(function(){
+           $("#link").attr({
+            "class": "black",
+            "href": "https://www.yahoo.com"
+        } );
+        });
+
+        $("#btn1").click(function(){
+            $("#list").append("<li>pink</li>")
+        })
+        $("#btn2").click(function(){
+            $("#list").prepend("<li>brown</li>")
+        })
+        $("#btn3").click(function(){
+            $("#list").after("<p>This is after element </p>")
+        })
+        $("#btn4").click(function(){
+            $("#list").before("<p>This is before element </p>")
+        })
+
+        //to remove its child
+        $("#list").empty();
+        //to remove that element completely with its child
+        $("#list").remove();
+
+       
+    </script>
+
 </body>
 </html>
